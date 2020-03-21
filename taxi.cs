@@ -47,29 +47,29 @@ namespace LabActivity3
 
         public void PickUpPassenger()
         {
-            Console.WriteLine("{0} sedang menjemput penumpang",driverName);
+            Console.WriteLine("{0} sedang menjemput penumpang", driverName);
         }
 
         public void DropOffPassenger()
         {
-            Console.WriteLine("{0} selesai menjemput penumpang",driverName);
+            Console.WriteLine("{0} selesai menjemput penumpang", driverName);
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-           Taxi taxi = new Taxi();
+            Taxi taxi = new Taxi();
 
-           taxi.DriverName = "Bagus Pranowo";
-           taxi.OnDuty = true;
-           taxi.NumPassenger = 2679;
+            taxi.DriverName = "Muhammad Ghanim Marsudi";
+            taxi.OnDuty = true;
+            taxi.NumPassenger = 2715;
 
-           taxi.TaxiInfo();
-           taxi.PickUpPassenger();
-           taxi.DropOffPassenger();
+            taxi.TaxiInfo();
+            taxi.PickUpPassenger();
+            taxi.DropOffPassenger();
 
-           Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
